@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.makemywebsite.com.au">
-    <img alt="Make My Website" src="./static/logo.png" width="100" />
+    <img alt="Make My Website" src="./src/images/logo.png" width="100" />
   </a>
 </p>
 <h1 align="center">
