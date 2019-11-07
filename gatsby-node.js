@@ -1,7 +1,19 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const projects = require("./src/content/projects")
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ actions: { createPage } }) => {
+  // Create a page that lists all projects.
+  createPage({
+    path: `/portfolio`,
+    component: require.resolve("./src/templates/all-projects.js"),
+    context: { projects },
+  })
+
+  // Create a page for each project.
+  projects.forEach(project => {
+    createPage({
+      path: `/portfolio/${project.path}`,
+      component: require.resolve("./src/templates/project.js"),
+      context: { project, image: project.image },
+    })
+  })
+}
