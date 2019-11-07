@@ -22,7 +22,7 @@ const WebDesign = () => (
     <Wrap>
       <ServiceHead>
         <h1>Web Design</h1>
-        <img src={headSeperator} alt="head-seperatot" />
+        <img src={headSeperator} alt="head-seperator" />
         <p>
           The technological wizardry has made it a need to have a presence
           online. The competition is no longer confined to your street, city or
