@@ -93,6 +93,34 @@ const Header = ({ siteTitle }) => (
               </span>
             </Link>
           </ItemLink>
+          <ItemLink>
+            <Link to="/portfolio">
+              <span>
+                Our Portfolio <hr />
+              </span>
+            </Link>
+          </ItemLink>
+          <ItemLink>
+            <Link to="/services">
+              <span>
+                Services <hr />
+              </span>
+            </Link>
+          </ItemLink>
+          <ItemLink>
+            <Link to="/blog">
+              <span>
+                Blog and News <hr />
+              </span>
+            </Link>
+          </ItemLink>
+          <ItemLink>
+            <Link to="/contact">
+              <span>
+                Contact <hr />
+              </span>
+            </Link>
+          </ItemLink>
           <ItemButton>
             <Link to="/contact">Easy Engagements</Link>
           </ItemButton>
