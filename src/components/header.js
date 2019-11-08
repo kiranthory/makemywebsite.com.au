@@ -1,14 +1,14 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "@emotion/styled"
-import Row from "./Row"
+import { Button } from "rebass"
+import { mq } from "../utils/styles"
 import logo from "../images/logo.png"
 
 const Flex = styled.header({
   display: "flex",
   alignItems: "center",
-  padding: `10px 0`,
+  padding: `5px 30`,
 })
 
 const Left = styled.div({
@@ -25,11 +25,12 @@ const Nav = styled.ul({
   listStyle: "none",
   margin: 0,
   padding: 0,
-  display: "flex",
+  fontSize: 0,
 })
 
 const Item = styled.li({
-  flex: `0 0 auto`,
+  display: "inline-block",
+  fontSize: "1rem",
   a: {
     position: "relative",
     textDecoration: "none",
@@ -71,71 +72,37 @@ const ItemButton = styled(Item)({
   },
 })
 
-const Header = ({ siteTitle }) => (
-  <Row>
-    <Flex>
-      <Left>
-        <LogoImg src={logo} />
-      </Left>
-      <Right>
-        <Nav>
-          <ItemLink>
-            <Link to="/">
+const links = [
+  ["Home 2", "/"],
+  ["About", "/about"],
+  ["Portfolio", "/portfolio"],
+  ["Services", "/services"],
+  ["Blog", "/blog"],
+  ["Contact", "/contact"],
+]
+
+const Header = () => (
+  <Flex>
+    <Left>
+      <LogoImg src={logo} />
+    </Left>
+    <Right>
+      <Nav>
+        {links.map(([title, link], index) => (
+          <ItemLink key={index}>
+            <Link to={link}>
               <span>
-                Home <hr />
+                {title} <hr />
               </span>
             </Link>
           </ItemLink>
-          <ItemLink>
-            <Link to="/page-2">
-              <span>
-                About <hr />
-              </span>
-            </Link>
-          </ItemLink>
-          <ItemLink>
-            <Link to="/portfolio">
-              <span>
-                Our Portfolio <hr />
-              </span>
-            </Link>
-          </ItemLink>
-          <ItemLink>
-            <Link to="/services">
-              <span>
-                Services <hr />
-              </span>
-            </Link>
-          </ItemLink>
-          <ItemLink>
-            <Link to="/blog">
-              <span>
-                Blog and News <hr />
-              </span>
-            </Link>
-          </ItemLink>
-          <ItemLink>
-            <Link to="/contact">
-              <span>
-                Contact <hr />
-              </span>
-            </Link>
-          </ItemLink>
-          <ItemButton>
-            <Link to="/contact">Easy Engagements</Link>
-          </ItemButton>
-        </Nav>
-      </Right>
-    </Flex>
-  </Row>
+        ))}
+        <ItemButton>
+          <Button>Easy Engagements</Button>
+        </ItemButton>
+      </Nav>
+    </Right>
+  </Flex>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
