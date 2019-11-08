@@ -4,6 +4,8 @@ import Seo from "../components/Seo"
 import headSeperator from "../images/heading-seperator.png"
 import onlineMarketing from "../images/online-marketing-man-on-computer.jpg"
 import {
+  P,
+  H1,
   Wrap,
   ServiceHead,
   Section,
@@ -18,9 +20,9 @@ const OnlineMarketing = () => (
 
     <Wrap>
       <ServiceHead>
-        <h1>Online Marketing</h1>
+        <H1>Online Marketing</H1>
         <img src={headSeperator} alt="head-seperator" />
-        <p>
+        <P>
           Marketing is the backbone of any business and none can shrug off its
           value. This certainly is our competitive advantage. To build a
           rewarding marketing program and maintaining it thereafter, several
@@ -29,8 +31,8 @@ const OnlineMarketing = () => (
           etcetera. These remain different from the conventional marketing
           strategies because the former ones possess the ability to widen the
           reach manifolds, globally.
-        </p>
-        <p>
+        </P>
+        <P>
           Following the online marketing, you can advertise in a very
           cost-effective manner. You can connect with your targeted audience
           within a nick of the moment, by diverting traffic the right way, for
@@ -40,13 +42,13 @@ const OnlineMarketing = () => (
           proving the fact that improvising the customer’s experience online
           through emails, blogs, and many other mediums, is what gives more
           returns than following offline marketing techniques.
-        </p>
+        </P>
       </ServiceHead>
 
       <Section>
         <Image src={onlineMarketing} />
         <Content>
-          <p>
+          <P>
             And, if you are already planning to hire an Online Marketing Company
             Blacktown, to enhance your progress, then your search ends here. All
             you need to do is, grab our services and within no time, there will
@@ -54,9 +56,9 @@ const OnlineMarketing = () => (
             updated about the current changing trends. The constant trend
             analysis at the backend makes us the leader in the strategic part as
             well.
-          </p>
+          </P>
 
-          <p>
+          <P>
             As soon as you team up with our marketing experts, your
             advertisements will get translated into quality traffic. Since our
             team works on curating marketing strategies round the clock, they
@@ -65,36 +67,36 @@ const OnlineMarketing = () => (
             research and brainstorming is done. To entice maximum viewers, it
             must be well crafted and implemented and this is what our
             professionals do.
-          </p>
-          <p>
+          </P>
+          <P>
             At Make My Website, our marketing experts carry out thorough
             research about your business before working on it.
-          </p>
+          </P>
         </Content>
       </Section>
 
       <ServiceBottom>
-        <p>
+        <P>
           They grab all the required information and even have an intense idea
           about your opponents’ strategies. They examine their campaigns and the
           marketing techniques they follow, to provide you with an altogether
           different and even more efficient marketing strategy which can set the
           stage for you.
-        </p>
-        <p>
+        </P>
+        <P>
           It is a known fact that to sustain amidst the internet era, online
           marketing is essential. Even if a business performs well without it,
           the level does not seem to maintain its momentum. Maintaining a level
           of growth and increasing it swiftly is significant for any business
           and the factor which influences it the most is Online Marketing.
-        </p>
-        <p>
+        </P>
+        <P>
           So, if you plan to follow the best method to advertise your company,
           just reach out to us. Always remember, there is an umpteen number of
           online marketing companies and services available but only an
           experienced one can intensify your growth and help you in gaining
           success.
-        </p>
+        </P>
       </ServiceBottom>
     </Wrap>
   </Layout>

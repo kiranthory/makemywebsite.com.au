@@ -12,22 +12,22 @@ export const P = styled.p({
   marginBottom: "15px",
 })
 
-export const Wrap = styled.div({
-  h3: {
-    fontSize: "30px",
-    marginTop: "0px",
-    lineHeight: "40px",
-    marginBottom: "10px",
-  },
-
-  h1: {
-    fontSize: "50px",
-    marginBottom: "20px",
-    fontWeight: 700,
-    fontFamily: "Roboto",
-    marginTop: "0px",
-  },
+export const H1 = styled.h1({
+  fontSize: "50px",
+  marginBottom: "20px",
+  fontWeight: 700,
+  fontFamily: "Roboto",
+  marginTop: "0px",
 })
+
+export const H3 = styled.h3({
+  fontSize: "30px",
+  marginTop: "0px",
+  lineHeight: "40px",
+  marginBottom: "10px",
+})
+
+export const Wrap = styled.div({})
 
 export const ServiceHead = styled(Row)({
   textAlign: "center",

@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "@emotion/styled"
 import { Button } from "rebass"
-import { mq } from "../utils/styles"
 import logo from "../images/logo.png"
 
 const Flex = styled.header({

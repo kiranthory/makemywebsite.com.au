@@ -4,6 +4,8 @@ import Seo from "../components/Seo"
 import headSeperator from "../images/heading-seperator.png"
 import eCommerce from "../images/woocommerce.jpg"
 import {
+  P,
+  H1,
   Wrap,
   ServiceHead,
   Section,
@@ -18,17 +20,17 @@ const Ecommerce = () => (
 
     <Wrap>
       <ServiceHead>
-        <h1>Ecommerce</h1>
+        <H1>Ecommerce</H1>
         <img src={headSeperator} alt="head-seperator" />
-        <p>
+        <P>
           Over the years, the usefulness of the internet has augmented manifold.
           The online technology structure has exposed marvelous growth which
           primarily includes the growth of Digital Websites. Brick-and-mortar
           shipping is out of fashion and everyone nowadays choose online
           shopping as the most convenient way. There are several companies which
           have a web presence for trading their products and services.
-        </p>
-        <p>
+        </P>
+        <P>
           If you plan to sell your products with the maximum number of sales and
           profits, having a presence of the same on the web is going to help you
           reach your goal. The knowledge and skills of the website developer and
@@ -38,53 +40,53 @@ const Ecommerce = () => (
           with making the best out of your eCommerce website. If you are looking
           for an E-commerce website agency in Australia, then there is no better
           agency than Make My Website.
-        </p>
+        </P>
       </ServiceHead>
 
       <Section>
         <Image src={eCommerce} />
         <Content>
-          <p>
+          <P>
             The expert designers here have extensive experience in this area
             along with all the required skills. The professional website
             designers here are well trained at developing such sites. Their
             assistance would not just augment the quality of the website, but
             also be responsive to your users to give the best shopping
             experience online, through you.
-          </p>
+          </P>
 
-          <p>
+          <P>
             If you are unsure of your need to avail professional services, do
             recall the fact that the online world is full of bugs. If you get
             your website built under the guidance of experts, your e-commerce
             website will tend to face lesser bugs and thus minimizing the costs
             for debugging in the future.
-          </p>
-          <p>
+          </P>
+          <P>
             Also, do take a note that you should always opt for an experienced
             team of web designers to provide what suits best for your business.
             Perhaps, this is the reason that people choose Make My Website to
             get their e-commerce website done.
-          </p>
+          </P>
         </Content>
       </Section>
 
       <ServiceBottom>
-        <p>
+        <P>
           Web development is a vast field of various operations which includes
           diverse features like its content, product catalogue widgets,
           promotional system, payment system and many more. Thus, an e-commerce
           designing agency like ours can benefit you with a top-notch website at
           reasonable rates.
-        </p>
-        <p>
+        </P>
+        <P>
           We assert that we are real professionals who work within the given
           deadlines. We regularly communicate with the concerned people in your
           company to get insights about your business to design a personalized
           e-commerce website for you to sell online in the most effective way.
           Therefore, for experiencing the finest e-commerce services, reach out
           to us. We certainly will not disappoint you.
-        </p>
+        </P>
       </ServiceBottom>
     </Wrap>
   </Layout>

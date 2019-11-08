@@ -4,6 +4,8 @@ import Seo from "../components/Seo"
 import headSeperator from "../images/heading-seperator.png"
 import payClick from "../images/payper-click.jpg"
 import {
+  P,
+  H1,
   Wrap,
   ServiceHead,
   Section,
@@ -17,28 +19,28 @@ const PayPerClick = () => (
 
     <Wrap>
       <ServiceHead>
-        <h1>Pay Per Click</h1>
+        <H1>Pay Per Click</H1>
         <img src={headSeperator} alt="head-seperator" />
-        <p>
+        <P>
           If you run a business of your own, you will find unending competition.
           The world is certainly brimming with companies and businesses. Most of
           the businesses these days, have a website to attract maximum
           customers. The best part although is, there are many ways to enhance
           your business online.
-        </p>
-        <p>
+        </P>
+        <P>
           There are tactics that can fetch you great outcomes. Pay Per Click is
           one such way with which you can monetize your website. Make My Website
           knows how to carry out Pay Per Click and how is it going to help you.
           Whatever time suits you, just contact us and we will more than happy
           to address your queries.
-        </p>
+        </P>
       </ServiceHead>
 
       <Section>
         <Image src={payClick} />
         <Content>
-          <p>
+          <P>
             Pay Per Click advertising has the power to transport targeted
             traffic, only after doing it the right way with proper technical
             knowledge. Even the marketing experts can make errors when they
@@ -48,9 +50,9 @@ const PayPerClick = () => (
             to witness spontaneous results. Else, the whole concept of PPC can
             leave you perplexed. Also, to give your business the right exposure,
             such marketing tools lay a strong foundation.
-          </p>
+          </P>
 
-          <p>
+          <P>
             For a successful PPC service, keyword research is critical. This is
             what our experts spend most of their time on: searching the right
             keywords. If in case the wrong keywords are chosen, the campaign
@@ -58,7 +60,7 @@ const PayPerClick = () => (
             all the time for you to expand the horizon of your business. Whether
             you want Google AdWords or Pay Per Click, we are just a text/call
             away.
-          </p>
+          </P>
         </Content>
       </Section>
     </Wrap>
