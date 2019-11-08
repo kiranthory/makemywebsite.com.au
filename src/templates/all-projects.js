@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
-
+import headSeperator from "../images/heading-seperator.png"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
@@ -23,6 +23,10 @@ const PortfolioOuter = styled.div({})
 
 const PortfolioTitle = styled.h1({
   textAlign: "center",
+  span: {
+    display: "block",
+    marginTop: "20px",
+  },
 })
 
 const FilterButton = styled.div({
@@ -121,7 +125,9 @@ const AllProjectsPage = ({ pageContext: { projects }, data }) => {
           <Seo title="Portfolio" />
           <PortfolioTitle>
             Our Portfolio
-            <span></span>
+            <span>
+              <img src={headSeperator} alt="head-seperator" />
+            </span>
           </PortfolioTitle>
 
           <FilterButton>
