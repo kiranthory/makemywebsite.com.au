@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
 import emotionNormalize from "emotion-normalize"
+import { ThemeProvider } from "emotion-theming"
+import theme from "@rebass/preset"
 
 import Header from "./header"
 
@@ -29,27 +31,17 @@ const Layout = ({ children }) => {
       <Global
         styles={css`
           ${emotionNormalize}
-
-          body {
-            font-family: Roboto;
-          }
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            font-family: Raleway;
-          }
         `}
       />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <ThemeProvider theme={theme}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </ThemeProvider>
     </>
   )
 }
