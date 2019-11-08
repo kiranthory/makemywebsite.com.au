@@ -1,9 +1,6 @@
 import styled from "@emotion/styled"
 import { mq } from "../utils/styles"
 
-export const RowBig = styled(Row)({
-  paddingTop: 60,
-  paddingBottom: 60,
 const paddingH = [15, 30]
 const paddingV = [30, 60]
 
