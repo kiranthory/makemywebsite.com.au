@@ -6,7 +6,7 @@ export const mediaQueries = breakpoints.map(bp => `@media (min-width: ${bp})`)
 export const mq = facepaint(mediaQueries)
 
 // rebass theme
-export default {
+export const theme = {
   breakpoints,
   fontSizes: [16, 20, 24, 32, 48, 64],
   colors: {
@@ -21,7 +21,7 @@ export default {
   },
   fontWeights: {
     body: 400,
-    heading: 700,
+    heading: 800,
     bold: 700,
   },
   lineHeights: {

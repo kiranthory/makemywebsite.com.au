@@ -11,8 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Global, css } from "@emotion/core"
 import emotionNormalize from "emotion-normalize"
 import { ThemeProvider } from "emotion-theming"
-import theme from "@rebass/preset"
-
+import { theme } from "../utils/styles"
 import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -34,6 +33,22 @@ const Layout = ({ children }) => {
 
           *, *:before, &:after {
             box-sizing: border-box;
+          }
+
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+              sans-serif;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: Montserrat, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Arial, sans-serif;
+            font-weight: 800;
           }
         `}
       />

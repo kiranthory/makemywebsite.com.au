@@ -2,13 +2,24 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "@emotion/styled"
 import { Button } from "rebass"
-import logo from "../images/logo.png"
+import { mq } from "../utils/styles"
+import logo from "../images/logos/MM-Black.svg"
 
-const Flex = styled.header({
-  display: "flex",
-  alignItems: "center",
-  padding: `5px 30`,
-})
+const paddingH = [15, 30, 30, 60]
+const paddingV = [5, 15]
+
+const Flex = styled.header(
+  {
+    display: "flex",
+    alignItems: "center",
+  },
+  mq({
+    paddingLeft: paddingH,
+    paddingRight: paddingH,
+    paddingTop: paddingV,
+    paddingBottom: paddingV,
+  })
+)
 
 const Left = styled.div({
   flex: `1 1 auto`,

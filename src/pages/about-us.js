@@ -28,8 +28,6 @@ const Wrap = styled.div({
   h1: {
     fontSize: "50px",
     marginBottom: "20px",
-    fontWeight: 700,
-    fontFamily: "Roboto",
     marginTop: "0px",
   },
 })

@@ -15,8 +15,6 @@ export const P = styled.p({
 export const H1 = styled.h1({
   fontSize: "50px",
   marginBottom: "20px",
-  fontWeight: 700,
-  fontFamily: "Roboto",
   marginTop: "0px",
 })
 
