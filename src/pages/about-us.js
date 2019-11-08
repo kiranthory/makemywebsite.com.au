@@ -3,13 +3,13 @@ import styled from "@emotion/styled"
 import Row from "../components/Row"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import headSeperator from "../imgs/heading-seperator.png"
-import mmwAbout from "../imgs/mmw-about.jpg"
-import webBusiness from "../imgs/responsive-design.png"
-import customerSatisfaction from "../imgs/customer-satisfaction.png"
-import businessSuccess from "../imgs/business-growth.png"
-import businessSep from "../imgs/business-bottom.jpg"
-import webDeveloper from "../imgs/web-developer.jpg"
+import headSeperator from "../images/heading-seperator.png"
+import mmwAbout from "../images/mmw-about.jpg"
+import webBusiness from "../images/responsive-design.png"
+import customerSatisfaction from "../images/customer-satisfaction.png"
+import businessSuccess from "../images/business-growth.png"
+import businessSep from "../images/business-bottom.jpg"
+import webDeveloper from "../images/web-developer.jpg"
 
 const Wrap = styled.div({
   p: {
@@ -77,19 +77,14 @@ const OurStory = styled(Row)({
   paddingTop: "80px",
 })
 
-const Left = styled.img({
+const Image = styled.img({
   flex: "1 1 50%",
 })
+
 const Right = styled.div({
   flex: `1 1 50%`,
   maxWidth: `50%`,
 })
-
-const img = ({ ...props }) => (
-  <BgWrap>
-    <Bg {...props} />
-  </BgWrap>
-)
 
 const AboutUs = () => (
   <Layout>
@@ -113,7 +108,7 @@ const AboutUs = () => (
           over Australia. We are just one phone call away to give your business
           an online presence.
         </p>
-        <img src={mmwAbout} />
+        <img src={mmwAbout} alt="Make My Website Responsive" />
         <Button>Contact Us</Button>
       </ServiceHead>
 
@@ -121,19 +116,19 @@ const AboutUs = () => (
         <h1>We Make Websites</h1>
         <img src={headSeperator} alt="head-seperator" />
         <Item>
-          <img src={webBusiness} />
+          <img src={webBusiness} alt=" Stands Out For Your Business" />
           <h6>Websites Which Stands Out For Your Business</h6>
-          <img src={businessSep} />
+          <img src={businessSep} alt="We Make Website" />
         </Item>
         <Item>
-          <img src={customerSatisfaction} />
+          <img src={customerSatisfaction} alt="Best Customer Satisfaction" />
           <h6>We Endeavour To Provide The Best Customer Satisfaction</h6>
-          <img src={businessSep} />
+          <img src={businessSep} alt="We Make Website" />
         </Item>
         <Item>
-          <img src={businessSuccess} />
+          <img src={businessSuccess} alt="Business Successful" />
           <h6>It’s All About Making Your Business Successful</h6>
-          <img src={businessSep} />
+          <img src={businessSep} alt="We Make Website" />
         </Item>
       </WeMakeWebsites>
       <OurStory>

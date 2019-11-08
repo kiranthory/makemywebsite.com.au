@@ -5,7 +5,6 @@ import headSeperator from "../images/heading-seperator.png"
 import webDesign from "../images/programmers-cooperating.jpg"
 import webProfessional from "../images/developer-team.jpg"
 import {
-  color,
   Wrap,
   ServiceHead,
   Section,

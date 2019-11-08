@@ -6,13 +6,13 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io"
 
 export const color = `#ED1D25`
 
-export const Wrap = styled.div({
-  p: {
-    lineHeight: "28px",
-    marginTop: "0px",
-    marginBottom: "15px",
-  },
+export const P = styled.p({
+  lineHeight: "28px",
+  marginTop: "0px",
+  marginBottom: "15px",
+})
 
+export const Wrap = styled.div({
   h3: {
     fontSize: "30px",
     marginTop: "0px",
