@@ -1,9 +1,16 @@
-// example theme.js
+import facepaint from "facepaint"
+
+// breakpoints and media queries
+export const breakpoints = ["500px", "900px", "1200px"]
+export const mediaQueries = breakpoints.map(bp => `@media (min-width: ${bp})`)
+export const mq = facepaint(mediaQueries)
+
+// rebass theme
 export default {
-  breakpoints: ["40em", "52em", "64em"],
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  breakpoints,
+  fontSizes: [16, 20, 24, 32, 48, 64],
   colors: {
-    P: "#07c",
+    primary: "#07c",
     lightgray: "#f6f6ff",
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],

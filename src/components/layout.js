@@ -31,6 +31,10 @@ const Layout = ({ children }) => {
       <Global
         styles={css`
           ${emotionNormalize}
+
+          *, *:before, &:after {
+            box-sizing: border-box;
+          }
         `}
       />
       <ThemeProvider theme={theme}>
