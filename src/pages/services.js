@@ -205,7 +205,7 @@ const ServicePage = () => (
             help you. Whatever time suits you, just contact us and we will more
             than happy to address your queries.
           </P>
-          <Link to="/pay-per-click">Read More...</Link>
+          <Link to="/pay-per-click-google-adwords">Read More...</Link>
         </Content>
         <Image src={payClick} right />
       </Section>

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import headSeperator from "../images/heading-seperator.png"
-import webMelbourne from "../images/web-designer-melbourne.jpg"
+import wyndhamVale from "../images/webdesign-wynhamvale.jpg"
 import werribeeMap from "../images/Watton-Street-Werribee.jpg"
 import {
   P,
@@ -38,7 +38,7 @@ const WebdesignWyndham = () => (
       </ServiceHead>
 
       <Section>
-        <Image src={webMelbourne} />
+        <Image src={wyndhamVale} />
         <Content>
           <P>
             We do endorse ourselves as the best web design agency in Australia,
@@ -50,23 +50,23 @@ const WebdesignWyndham = () => (
             “Excellent services and timely completion! –
             naileditfencingandcarpentry.com.au”
           </P>
-          <p>
+          <P>
             Having said that, community building is a priority for us to create
             synergies together and hence we welcome more and more businesses in
             Wyndham Vale to associate with us.
-          </p>
-          <p>
+          </P>
+          <P>
             For a business to be successful, it is essential to strengthen the
             roots, which certainly is done by laying the foundation of your
             online presence in front of the prospective customers. Count on us
             to enhance the aspect of your business digitally for we believe in
             value, sincerity and results!
-          </p>{" "}
+          </P>
         </Content>
       </Section>
 
       <ServiceBottom>
-        <h1>We Operate From Werribee </h1>
+        <H1>We Operate From Werribee </H1>
         <img
           src={werribeeMap}
           alt="129A Watton Street Werribee Victoria 3030 Australia"
