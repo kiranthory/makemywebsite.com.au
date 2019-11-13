@@ -38,12 +38,11 @@ export const ServiceHead = styled(Row)({
 
 export const Section = styled(Row)({
   display: "flex",
-  paddingTop: "15px",
 })
 
 export const Content = styled.div({
   flex: `1 1 50%`,
-  padding: "0px 30px",
+  padding: "30px",
 })
 
 export const BgWrap = styled.div({
