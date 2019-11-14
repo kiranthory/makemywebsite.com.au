@@ -88,11 +88,6 @@ const Image = styled.img({
   flex: "1 1 50%",
 })
 
-const Right = styled.div({
-  flex: `1 1 50%`,
-  maxWidth: `50%`,
-})
-
 const AboutUs = () => (
   <Layout>
     <Seo title="About Us" />

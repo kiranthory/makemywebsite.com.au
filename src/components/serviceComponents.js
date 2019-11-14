@@ -20,7 +20,7 @@ export const H1 = styled.h1({
 })
 
 export const H3 = styled.h3({
-  fontSize: "30px",
+  fontSize: "27px",
   marginTop: "0px",
   lineHeight: "40px",
   marginBottom: "10px",

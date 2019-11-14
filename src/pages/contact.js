@@ -1,24 +1,69 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
+import Row from "../components/Row"
+import { IoIosCall, IoIosMail, IoMdClock, IoMdLocate } from "react-icons/io"
+import GoogleMap from "../components/GoogleMap"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
+import { P, H1, H3, Wrap, Section } from "../components/serviceComponents"
 import headSeperator from "../images/heading-seperator.png"
-import { IoIosCall } from "react-icons/io"
-import { IoIosMail } from "react-icons/io"
-import { IoMdClock } from "react-icons/io"
-import { IoMdLocate } from "react-icons/io"
-import {
-  P,
-  H1,
-  H3,
-  Wrap,
-  ServiceHead,
-  Section,
-  Content,
-} from "../components/serviceComponents"
 
-const Left = styled.div({})
-const Right = styled.div({})
+const Map = styled.div({
+  flex: "1 1 50%",
+})
+
+const ContactForm = styled.div({
+  textAlign: "left",
+  width: "100%",
+  maxWidth: "70%",
+  margin: "auto",
+
+  input: {
+    width: "100%",
+    padding: "10px",
+  },
+
+  textarea: {
+    width: "100%",
+    padding: "10px",
+    height: "120px",
+  },
+
+  button: {
+    background: "#ED1C24",
+    padding: "12px 25px",
+    color: "#fff",
+    border: "0px",
+    borderRadius: "5px",
+    textAlign: "center",
+  },
+})
+
+export const ServiceHead = styled(Row)({
+  textAlign: "center",
+  padding: "70px 0",
+})
+
+const Content = styled.div({
+  background: "#f1f1f1",
+  flex: "1 1 50%",
+  padding: "50px 30px",
+  textAlign: "center",
+})
+
+const mapiconStyle = css({
+  fill: "#ED1C24",
+  width: "30px",
+  height: "30px",
+})
+
+const iconStyle = css({
+  fill: "#ED1C24",
+  width: "20px",
+  height: "20px",
+  verticalAlign: "middle",
+})
 
 const ContactPage = () => (
   <Layout>
@@ -29,32 +74,73 @@ const ContactPage = () => (
         <H1>Get In Touch With Us</H1>
         <img src={headSeperator} alt="head-seperator" />
         <P>
-          {IoIosMail} <b>E-Mail :</b> info@makemywebsite.com.au
+          <IoIosMail css={iconStyle} /> info@makemywebsite.com.au
         </P>
         <P>
-          {IoIosCall} <b>Phone :</b> 1300769302
+          <IoIosCall css={iconStyle} /> 1300769302
         </P>
         <P>
-          {IoMdClock} <b>Opening Hours :</b> 09:00am-07:00pm
+          <IoMdClock css={iconStyle} /> 09:00am-07:00pm
         </P>
+        <ContactForm>
+          <form action="">
+            <P>
+              <label>Name </label>
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </P>
+            <P>
+              <label>Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </P>
+
+            <P>
+              <label>Message </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Comments"
+              />
+            </P>
+            <P>
+              <button type="submit">Send</button>
+            </P>
+          </form>
+        </ContactForm>
       </ServiceHead>
 
       <Section>
-        <Left></Left>
+        <Map>
+          <GoogleMap lat={-37.90262} lng={144.65944} />
+        </Map>
         <Content>
-          <P>{IoMdLocate}</P>
+          <P>
+            <IoMdLocate css={mapiconStyle} />
+          </P>
           <H3>Address</H3>
-          <P>129A Watton Street Werribee Victoria 3030, Australia</P>
+          <P>
+            129A Watton Street Werribee <br />
+            Victoria 3030,
+            <br /> Australia
+          </P>
         </Content>
       </Section>
 
       <Section>
         <Content>
-          <P>{IoMdLocate}</P>
+          <P>
+            <IoMdLocate css={mapiconStyle} />
+          </P>
           <H3>Address</H3>
-          <P>1/4A Bessemer St Blacktown NSW 2148</P>
+          <P>
+            1/4A Bessemer St Blacktown
+            <br /> NSW 2148,
+            <br /> Australia
+          </P>
         </Content>
-        <Right></Right>
+        <Map>
+          <GoogleMap lat={-33.75858} lng={150.91115} />
+        </Map>
       </Section>
     </Wrap>
   </Layout>
