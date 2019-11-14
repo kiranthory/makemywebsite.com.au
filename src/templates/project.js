@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
@@ -45,7 +46,11 @@ const ProjectPage = ({ pageContext: { project }, data: { image } }) => {
             <H1>{project.title}</H1>
             <Pcategory>{project.tags}</Pcategory>
 
-            <Plink>{project.url}</Plink>
+            <Plink>
+              <Link to={project.url} target="_blank">
+                {project.url}
+              </Link>
+            </Plink>
           </Content>
         </Section>
       </Row>

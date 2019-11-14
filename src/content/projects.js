@@ -26,7 +26,7 @@ module.exports = [
   {
     path: "21297",
     title: "Mansutti Bros",
-    image: "portfolio/mansuttibros-au-au.jpg",
+    image: "portfolio/mansuttibros.jpg",
     tags: ["Others"],
     content: "",
     url: "https://mansuttibros.com ",
@@ -98,7 +98,7 @@ module.exports = [
   {
     path: "aussie-hands",
     title: "Aussie Hands",
-    image: "portfolio/aussiehands-au.jpg",
+    image: "portfolio/aussiehands-org.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.aussiehands.org/ ",
@@ -106,7 +106,7 @@ module.exports = [
   {
     path: "bcs-comms-and-civil-construction",
     title: "BCS Comms And Civil Construction",
-    image: "portfolio/bcscomms-au.jpg",
+    image: "portfolio/bcscomms-net-au.jpg",
     tags: ["Others"],
     content: "",
     url: "http://www.bcscomms.net.au ",
@@ -130,7 +130,7 @@ module.exports = [
   {
     path: "southern-cross-facilities-management",
     title: "Southern Cross Facilities Management",
-    image: "portfolio/scfmcleaning-au-au.jpg",
+    image: "portfolio/scfmcleaning.jpg",
     tags: ["Others"],
     content: "",
     url: "https://scfmcleaning.com ",
@@ -202,7 +202,7 @@ module.exports = [
   {
     path: "gng-skin-clinic",
     title: "GNG Skin Clinic",
-    image: "portfolio/glimmerandglowskin-image-au.jpg",
+    image: "portfolio/glimmerandglowskin-au.jpg",
     tags: ["Beauty / Salon"],
     content: "",
     url: "https://www.glimmerandglowskin.com.au/ ",
@@ -210,7 +210,7 @@ module.exports = [
   {
     path: "ash-developments",
     title: "Ash Developments",
-    image: "portfolio/ashdevelopments-image-au.jpg",
+    image: "portfolio/ashdevelopments-au.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.ashdevelopments.com.au/ ",
@@ -218,7 +218,7 @@ module.exports = [
   {
     path: "roperty-focus-group",
     title: "Property Focus Group",
-    image: "portfolio/propertyfocusgroup-img-au.jpg",
+    image: "portfolio/propertyfocusgroup-au.jpg",
     tags: ["Real Estate"],
     content: "",
     url: "https://www.propertyfocusgroup.com.au/ ",
@@ -226,7 +226,7 @@ module.exports = [
   {
     path: "dmg-solar-technology",
     title: "DMG Solar Technology",
-    image: "portfolio/dmgsolartechnology-image-au.jpg",
+    image: "portfolio/dmgsolartechnology.jpg",
     tags: ["Painter/Plumber/Electrician"],
     content: "",
     url: "https://www.dmgsolartechnology.com/ ",
@@ -234,7 +234,7 @@ module.exports = [
   {
     path: "radio-chahat",
     title: "Radio Chahat",
-    image: "portfolio/radiochahat-img-au.jpg",
+    image: "portfolio/radiochahat-au.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.radiochahat.com.au/ ",
@@ -242,7 +242,7 @@ module.exports = [
   {
     path: "white-life-smiles",
     title: "White Life Smiles",
-    image: "portfolio/whitelifesmilespg-image-au.jpg",
+    image: "portfolio/whitelifesmilespg.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.whitelifesmiles.com/ ",
@@ -250,7 +250,7 @@ module.exports = [
   {
     path: "pie-mine",
     title: "Pie Mine",
-    image: "portfolio/thepiemine-au.jpg",
+    image: "portfolio/thepiemine1-1.jpg",
     tags: ["Food Industry"],
     content: "",
     url: "http://thepiemine.com.au/ ",
@@ -258,7 +258,7 @@ module.exports = [
   {
     path: "kalliope-lemnos",
     title: "Kalliope Lemnos",
-    image: "portfolio/kalliopelemnos-img-au.jpg",
+    image: "portfolio/kalliopelemnos.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://kalliopelemnos.com/ ",
@@ -282,7 +282,7 @@ module.exports = [
   {
     path: "built-by-brent",
     title: "Built By Brent",
-    image: "portfolio/builtbybrent-au-image-au.jpg",
+    image: "portfolio/builtbybrent-au-1.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.builtbybrent.com.au ",
@@ -290,7 +290,7 @@ module.exports = [
   {
     path: "lj-building",
     title: "LJ Building",
-    image: "portfolio/ljbuilding-au-img-au.jpg",
+    image: "portfolio/ljbuilding-au.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.ljbuilding.com.au ",
@@ -298,7 +298,7 @@ module.exports = [
   {
     path: "harte-civil-vic",
     title: "Harte Civil VIC",
-    image: "portfolio/hartecivilvic-img-au.jpg",
+    image: "portfolio/hartecivilvic-au.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.hartecivilvic.com.au ",
@@ -306,7 +306,7 @@ module.exports = [
   {
     path: "out-and-about-minibus-hire",
     title: "Out And About Minibus Hire",
-    image: "portfolio/outandaboutminibus-image-au.jpg",
+    image: "portfolio/outandaboutminibus-au.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.outandaboutminibus.com.au ",
@@ -314,7 +314,7 @@ module.exports = [
   {
     path: "build-estimating",
     title: "Build Estimating",
-    image: "portfolio/buildestimating-au-img-au.jpg",
+    image: "portfolio/buildestimating-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.buildestimating.com.au ",
@@ -322,7 +322,7 @@ module.exports = [
   {
     path: "diligent-workplace-investigations-group",
     title: "Diligent Workplace Investigations Group",
-    image: "portfolio/dwigroup-au-img-au.jpg",
+    image: "portfolio/dwigroup-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.dwigroup.com.au/ ",
@@ -338,7 +338,7 @@ module.exports = [
   {
     path: "modern-day-designs",
     title: "Modern Day Designs",
-    image: "portfolio/moderndaydesigns-img-au.jpg",
+    image: "portfolio/moderndaydesigns-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.moderndaydesigns.com.au/ ",
@@ -362,7 +362,7 @@ module.exports = [
   {
     path: "shweta",
     title: "Shweta",
-    image: "portfolio/shwetaoz-1-au.jpg",
+    image: "portfolio/shwetaoz.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.shwetaoz.com/ ",
@@ -378,7 +378,7 @@ module.exports = [
   {
     path: "parkview-dental",
     title: "Parkview Dental",
-    image: "portfolio/parkviewdental-au.jpg",
+    image: "portfolio/parkviewdental-melbourne.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://parkviewdental.melbourne/ ",
@@ -474,7 +474,7 @@ module.exports = [
   {
     path: "vertex-educational-consultants",
     title: "Vertex Educational Consultants",
-    image: "portfolio/vertexedu-au.jpg",
+    image: "portfolio/vertexedu-co-uk.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.vertexedu.co.uk/ ",
@@ -482,7 +482,7 @@ module.exports = [
   {
     path: "ultimate-success-wellbeing-psychology",
     title: "Ultimate Success & Wellbeing Psychology",
-    image: "portfolio/ultimatesuccessand-au.jpg",
+    image: "portfolio/ultimatesuccessandwellbeing.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.ultimatesuccessandwellbeing.com/ ",
@@ -514,7 +514,7 @@ module.exports = [
   {
     path: "prowolf",
     title: "Prowolf",
-    image: "portfolio/prowolf-small-au.jpg",
+    image: "portfolio/prowolf-large.jpg",
     tags: ["Ecommerce"],
     content: "",
     url: "https://www.prowolf.shop/ ",
@@ -562,7 +562,7 @@ module.exports = [
   {
     path: "vic-park-psychology",
     title: "VIC Park Psychology",
-    image: "portfolio/vicparkpsychology-au.jpg",
+    image: "portfolio/vicparkpsychology-au-.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.vicparkpsychology.com.au/ ",
@@ -610,7 +610,7 @@ module.exports = [
   {
     path: "jameson-boyce-partners",
     title: "Jameson Boyce Partners",
-    image: "portfolio/jamesonboyce-1-au.jpg",
+    image: "portfolio/jamesonboyce-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.jamesonboyce.com.au/ ",
@@ -618,7 +618,7 @@ module.exports = [
   {
     path: "krishna-refrigeration-air-conditioning",
     title: "Krishna Refrigeration Air Conditioning",
-    image: "portfolio/krishnarefrigeration-au.jpg",
+    image: "portfolio/krishnarefrigeration-au-.jpg",
     tags: ["Painter/Plumber/Electrician"],
     content: "",
     url: "https://www.krishnarefrigeration.com.au/ ",
@@ -650,7 +650,7 @@ module.exports = [
   {
     path: "in-situ-design-make",
     title: "IN SITU | Design.Make",
-    image: "portfolio/insitudesignmake-1-au.jpg",
+    image: "portfolio/insitudesignmake.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.insitudesignmake.com/ ",
@@ -674,7 +674,7 @@ module.exports = [
   {
     path: "melbourne-institute-of-vocational-studies",
     title: "Melbourne Institute of Vocational Studies",
-    image: "portfolio/mivs-au.jpg",
+    image: "portfolio/mivs-edu.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.mivs.edu.au/ ",
@@ -706,7 +706,7 @@ module.exports = [
   {
     path: "punting-pro",
     title: "Punting Pro",
-    image: "portfolio/punting-au.jpg",
+    image: "portfolio/punting-pro.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.punting.pro/ ",
@@ -714,7 +714,7 @@ module.exports = [
   {
     path: "imajin-australias-empire",
     title: "Imajin Australia’s Empire",
-    image: "portfolio/imajin-australia-short-au.jpg",
+    image: "portfolio/australiasempire-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.australiasempire.com.au/ ",
@@ -778,7 +778,7 @@ module.exports = [
   {
     path: "change-lead",
     title: "Change lead",
-    image: "portfolio/changelead1-au.jpg",
+    image: "portfolio/changelead.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.changelead.com/ ",
@@ -786,7 +786,7 @@ module.exports = [
   {
     path: "indian-beauty-lounge",
     title: "Indian Beauty Lounge",
-    image: "portfolio/indianbeautylounge1-au.jpg",
+    image: "portfolio/indianbeautylounge.jpg",
     tags: ["Beauty / Salon"],
     content: "",
     url: "https://www.indianbeautylounge.com/ ",
@@ -810,7 +810,7 @@ module.exports = [
   {
     path: "melbourne-wide-cleaning",
     title: "Melbourne Wide Cleaning Management",
-    image: "portfolio/melbournewidecleaning-au.jpg",
+    image: "portfolio/melbournewidecleaning-com.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.melbournewidecleaning.com/ ",
@@ -850,7 +850,7 @@ module.exports = [
   {
     path: "bouncy-ballerinas",
     title: "Bouncy Ballerinas",
-    image: "portfolio/bouncyballerinas-au-au.jpg",
+    image: "portfolio/bouncyballerinas.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.bouncyballerinas.com.au/ ",
@@ -938,7 +938,7 @@ module.exports = [
   {
     path: "real-estate-fairsale",
     title: "Real Estate FairSale",
-    image: "portfolio/realestatefairsal-au.jpg",
+    image: "portfolio/realestatefairsale-au.jpg",
     tags: ["Real Estate"],
     content: "",
     url: "https://www.realestatefairsale.com.au/ ",
@@ -970,7 +970,7 @@ module.exports = [
   {
     path: "vdakk-mental-health-disability-service",
     title: "VDAKK Mental Health & Disability Service",
-    image: "portfolio/vdakksupports-2-au.jpg",
+    image: "portfolio/VDAKK-Mental-Health-Disability-Services-VMHDS.jpg",
     tags: ["Others"],
     content: "",
     url: "https://www.vdakksupports.com/ ",
@@ -978,7 +978,7 @@ module.exports = [
   {
     path: "molonglo-dental-surgery",
     title: "Molonglo Dental Surgery",
-    image: "portfolio/molonglodental-au-2-au.jpg",
+    image: "portfolio/molonglodental-au.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.molonglodental.com.au/ ",
@@ -986,7 +986,7 @@ module.exports = [
   {
     path: "stark-drilling",
     title: "Stark Drilling",
-    image: "portfolio/starkdrilling-au2-au.jpg",
+    image: "portfolio/starkdrilling-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.starkdrilling.com.au/ ",
@@ -1002,7 +1002,7 @@ module.exports = [
   {
     path: "bitcoin-vanuatu",
     title: "Bitcoin Vanuatu",
-    image: "portfolio/bitcoinvanuatu-au.jpg",
+    image: "portfolio/bitcoinvanuatu-vu.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://bitcoinvanuatu.vu/ ",
@@ -1034,7 +1034,7 @@ module.exports = [
   {
     path: "graceful-window-furnishings",
     title: "Graceful Window Furnishings",
-    image: "portfolio/gracefulwindowfurnishings-au-au.jpg",
+    image: "portfolio/gracefulwindowfurnishings.jpg",
     tags: ["Ecommerce"],
     content: "",
     url: "https://www.gracefulwindowfurnishings.com.au/ ",
@@ -1088,7 +1088,7 @@ module.exports = [
     url: "https://www.findusabuilder.com.au/ ",
   },
   {
-    path: "find-us-a-builder",
+    path: "katam-drainage",
     title: "Katam Drainage",
     image: "portfolio/katamdrainage-au.jpg",
     tags: ["Business / Events"],
@@ -1106,7 +1106,7 @@ module.exports = [
   {
     path: "tw-party-hire",
     title: "TW Party Hire",
-    image: "portfolio/twpartyhire-au-au.jpg",
+    image: "portfolio/twpartyhire.jpg",
     tags: ["Ecommerce"],
     content: "",
     url: "http://www.twpartyhire.com.au/ ",
@@ -1114,7 +1114,7 @@ module.exports = [
   {
     path: "st-vincentine-santos-incorporation",
     title: "St Vincentine & Santos Incorporation",
-    image: "portfolio/santosvincent-au--au.jpg",
+    image: "portfolio/santosvincent.jpg",
     tags: ["Medical"],
     content: "",
     url: "http://www.santosvincent.com.au/ ",
@@ -1162,7 +1162,7 @@ module.exports = [
   {
     path: "florium-creations",
     title: "Florium Creations",
-    image: "portfolio/florium-small-au.jpg",
+    image: "portfolio/floriumcreations-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.floriumcreations.com.au/ ",
@@ -1170,7 +1170,7 @@ module.exports = [
   {
     path: "realworld-business-brokers",
     title: "RealWorld Business Brokers",
-    image: "portfolio/realworldbusinesses-au-au.jpg",
+    image: "portfolio/realworldbusinesses.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.realworldbusinesses.com.au/ ",
@@ -1194,7 +1194,7 @@ module.exports = [
   {
     path: "aura-form",
     title: "AURA & FORM",
-    image: "portfolio/aura-form2-au.jpg",
+    image: "portfolio/aura-form.jpg",
     tags: ["Ecommerce"],
     content: "",
     url: "https://www.auraandform.com/aura-form/ ",
@@ -1218,7 +1218,7 @@ module.exports = [
   {
     path: "angels-hair-extensions",
     title: "Angel’s Hair Extensions",
-    image: "portfolio/angelshair-2-au.jpg",
+    image: "portfolio/angelshair.jpg",
     tags: ["Beauty / Salon"],
     content: "",
     url: "http://www.angelshair.com.au/ ",
@@ -1226,7 +1226,7 @@ module.exports = [
   {
     path: "vertifix-printing",
     title: "Vertifix Printing",
-    image: "portfolio/vertifix-au2-au.jpg",
+    image: "portfolio/vertifix-au.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.vertifix.com.au/ ",
@@ -1234,7 +1234,7 @@ module.exports = [
   {
     path: "sef-energy",
     title: "SEF Energy",
-    image: "portfolio/sfeenergy2-au.jpg",
+    image: "portfolio/sfeenergy1.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.sfeenergy.com.au/ ",
@@ -1242,7 +1242,7 @@ module.exports = [
   {
     path: "sydney-airconditioning-pty-ltd",
     title: "Sydney Airconditioning Pty Ltd",
-    image: "portfolio/sydneyairconditioning2-au.jpg",
+    image: "portfolio/sydneyairconditioning1.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.sydneyairconditioning.net.au/ ",
@@ -1250,7 +1250,7 @@ module.exports = [
   {
     path: "green-gold-driving-school",
     title: "Green & Gold Driving School",
-    image: "portfolio/greenandgolddriving2-au.jpg",
+    image: "portfolio/greenandgolddriving-au.jpg",
     tags: ["Driving School"],
     content: "",
     url: "https://www.greenandgolddriving.com.au/ ",
@@ -1258,7 +1258,7 @@ module.exports = [
   {
     path: "calbung-stays",
     title: "Calbung Stays",
-    image: "portfolio/calbungstays2-au.jpg",
+    image: "portfolio/calbungstays1.jpg",
     tags: ["Real Estate"],
     content: "",
     url: "https://www.calbungstays.com/ ",
@@ -1266,7 +1266,7 @@ module.exports = [
   {
     path: "cleanest-victoria-cleaning-services",
     title: "Cleanest Victoria Cleaning Services",
-    image: "portfolio/cleanestvictoria-au.jpg",
+    image: "portfolio/cleanestvictoria-2.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.cleanestvictoria.com.au/ ",
@@ -1274,7 +1274,7 @@ module.exports = [
   {
     path: "altona-electrical-services",
     title: "Altona Electrical Services",
-    image: "portfolio/altonaelectrical-au-au.jpg",
+    image: "portfolio/altonaelectrical-au-2.jpg",
     tags: ["Painter/Plumber/Electrician"],
     content: "",
     url: "http://altonaelectrical.com.au/ ",
@@ -1282,7 +1282,7 @@ module.exports = [
   {
     path: "patidar-samaj-of-victoria",
     title: "Patidar Samaj of Victoria",
-    image: "portfolio/psov-au.jpg",
+    image: "portfolio/psov2.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.psov.org.au/ ",
@@ -1290,7 +1290,7 @@ module.exports = [
   {
     path: "occupational-therapy-sydney",
     title: "Occupational Therapy Sydney",
-    image: "portfolio/otssydney-au.jpg",
+    image: "portfolio/otssydney2.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.otssydney.com.au/ ",
@@ -1298,7 +1298,7 @@ module.exports = [
   {
     path: "muna-disability-services",
     title: "Muna Disability Services",
-    image: "portfolio/Muna-Disability-Services-small-au.jpg",
+    image: "portfolio/Muna-Disability-Services.jpg",
     tags: ["Medical"],
     content: "",
     url: "https://www.munadisabilityservice.com.au/ ",
@@ -1306,7 +1306,7 @@ module.exports = [
   {
     path: "limovia-corporate-cars",
     title: "Limovia Corporate Cars",
-    image: "portfolio/2-au.jpg",
+    image: "portfolio/1.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "http://www.limoviacorporatecars.com.au/ ",
@@ -1314,7 +1314,7 @@ module.exports = [
   {
     path: "glowy-smile-teeth",
     title: "Glowy Smile Teeth",
-    image: "portfolio/Glowy-Smile-Teeth-small-au.jpg",
+    image: "portfolio/Glowy-Smile-Teeth.jpg",
     tags: ["Ecommerce", "Medical"],
     content: "",
     url: "https://www.glowysmileteeth.com/ ",
@@ -1322,7 +1322,7 @@ module.exports = [
   {
     path: "shivas-migration-services",
     title: "Shiva’s Migration Services",
-    image: "portfolio/Shiva’s-Migration-small-au.jpg",
+    image: "portfolio/Shiva’s-Migration.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.shivasbiz.com/ ",
@@ -1330,7 +1330,7 @@ module.exports = [
   {
     path: "stafford-guns",
     title: "Stafford & Guns",
-    image: "portfolio/400-400-1-au.jpg",
+    image: "portfolio/890-1.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://staffordandguns.com.au/ ",
@@ -1338,7 +1338,7 @@ module.exports = [
   {
     path: "robyn-finlay",
     title: "Robyn Finlay",
-    image: "portfolio/400-400-au.jpg",
+    image: "portfolio/890.jpg",
     tags: ["Business / Events"],
     content: "",
     url: "https://www.rfcivilcelebrant.com.au/ ",
@@ -1346,7 +1346,7 @@ module.exports = [
   {
     path: "the-grand-pavilion",
     title: "The Grand Pavilion",
-    image: "portfolio/thegrandpavilion-au-au.jpg",
+    image: "portfolio/thegrandpavilion-au2.jpg",
     tags: ["Food Industry"],
     content: "",
     url: "https://www.thegrandpavilion.com.au/ ",
@@ -1539,7 +1539,7 @@ module.exports = [
   {
     path: "i2-homes",
     title: "i2 Homes",
-    image: "portfolio/i2-Homes-au.jpg",
+    image: "portfolio/i2-Homes-au.png",
     tags: ["Business / Events"],
     content: "",
     url: "http://i2homes.com.au/ ",

@@ -63,6 +63,8 @@ const PortfolioList = styled.ul({
 
 const PortfolioItem = styled.li({
   width: "25%",
+  maxHeight: "300px",
+  overflow: "hidden",
   display: "inline-block",
   verticalAlign: "top",
   padding: "15px",
@@ -84,6 +86,7 @@ const PortfolioItemTitle = styled.span({
   width: "70%",
   textAlign: "center",
   fontSize: "15px",
+  lineHeight: "20px",
 })
 
 export const pageQuery = graphql`
@@ -106,12 +109,20 @@ export const pageQuery = graphql`
 const AllProjectsPage = ({ pageContext: { projects }, data }) => {
   const [activeTag, setActiveTag] = useState(undefined)
 
-  const projectsWithImages = projects.map(project => ({
-    ...project,
-    childImageSharp: data.images.edges.find(
+  const projectsWithImages = projects.map(project => {
+    const image = data.images.edges.find(
       image => image.node.relativePath === project.image
-    ).node.childImageSharp,
-  }))
+    )
+
+    if (!image) console.log("project with no image", project)
+
+    const newProject = {
+      ...project,
+      childImageSharp: image ? image.node.childImageSharp : undefined,
+    }
+
+    return newProject
+  })
 
   const tags = projects
     .map(project => project.tags)
@@ -156,13 +167,12 @@ const AllProjectsPage = ({ pageContext: { projects }, data }) => {
                     activeTag === undefined || project.tags.includes(activeTag)
                 )
                 .map((project, index) => {
-                  if (!project.childImageSharp) {
-                    debugger
-                  }
                   return (
                     <PortfolioItem key={index}>
                       <Link to={`/portfolio/${project.path}`}>
-                        <Img fluid={project.childImageSharp.fluid} />
+                        {project.childImageSharp && (
+                          <Img fluid={project.childImageSharp.fluid} />
+                        )}
                         <PortfolioItemTitle>{project.title}</PortfolioItemTitle>
                       </Link>
                     </PortfolioItem>

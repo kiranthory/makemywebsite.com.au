@@ -1,6 +1,6 @@
-const projects = require("./src/content/projects")
-
 exports.createPages = async ({ actions: { createPage } }) => {
+  const projects = require("./src/content/projects")
+
   // Create a page that lists all projects.
   createPage({
     path: `/portfolio`,
