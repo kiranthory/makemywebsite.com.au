@@ -28,6 +28,8 @@ const Wrap = styled.div({
   h1: {
     fontSize: "50px",
     marginBottom: "20px",
+    fontWeight: 700,
+    fontFamily: "Roboto",
     marginTop: "0px",
   },
 })
@@ -64,24 +66,26 @@ const Button = styled.button({
   padding: "10px 20px",
   border: "0px",
   lineHeight: "20px",
+  display: "block",
+  margin: "auto",
+  borderRadius: "20px",
 })
 
-const Item = styled.div({
-  flex: "1 1 33%",
-  padding: "10px 20px",
+const Item = styled.div({})
+const ItemWarpper = styled.div({
+  display: "flex",
 })
 
 const OurStory = styled(Row)({
   paddingTop: "80px",
 })
-
-const Image = styled.img({
-  flex: "1 1 50%",
+const StoryInner = styled.div({
+  display: "flex",
 })
 
-const Right = styled.div({
-  flex: `1 1 50%`,
-  maxWidth: `50%`,
+const StoryDiv = styled.div({})
+const Image = styled.img({
+  flex: "1 1 50%",
 })
 
 const AboutUs = () => (
@@ -92,6 +96,7 @@ const AboutUs = () => (
       <ServiceHead>
         <h1>About Us</h1>
         <img src={headSeperator} alt="head-seperator" />
+
         <p>
           <b>We Don’t Just Build Websites, We Build Your Online Business!</b>
         </p>
@@ -113,51 +118,58 @@ const AboutUs = () => (
       <WeMakeWebsites>
         <h1>We Make Websites</h1>
         <img src={headSeperator} alt="head-seperator" />
-        <Item>
-          <img src={webBusiness} alt=" Stands Out For Your Business" />
-          <h6>Websites Which Stands Out For Your Business</h6>
-          <img src={businessSep} alt="We Make Website" />
-        </Item>
-        <Item>
-          <img src={customerSatisfaction} alt="Best Customer Satisfaction" />
-          <h6>We Endeavour To Provide The Best Customer Satisfaction</h6>
-          <img src={businessSep} alt="We Make Website" />
-        </Item>
-        <Item>
-          <img src={businessSuccess} alt="Business Successful" />
-          <h6>It’s All About Making Your Business Successful</h6>
-          <img src={businessSep} alt="We Make Website" />
-        </Item>
+        <ItemWarpper>
+          <Item>
+            <img src={webBusiness} alt=" Stands Out For Your Business" />
+            <h6>Websites Which Stands Out For Your Business</h6>
+            <img src={businessSep} alt="We Make Website" />
+          </Item>
+          <Item>
+            <img src={customerSatisfaction} alt="Best Customer Satisfaction" />
+            <h6>We Endeavour To Provide The Best Customer Satisfaction</h6>
+            <img src={businessSep} alt="We Make Website" />
+          </Item>
+          <Item>
+            <img src={businessSuccess} alt="Business Successful" />
+            <h6>It’s All About Making Your Business Successful</h6>
+            <img src={businessSep} alt="We Make Website" />
+          </Item>
+        </ItemWarpper>
       </WeMakeWebsites>
       <OurStory>
         <h1>Our Story</h1>
         <img src={headSeperator} alt="head-seperator" />
-        <Image src={webDeveloper} />
-
-        <Right>
-          <p>
-            Make My Website is a digital agency with a vision to provide bespoke
-            websites for every business. We are a small team of talented
-            individuals willing to work your way to help you succeed online.
-          </p>
-          <p>
-            Here at Make My Website, we offer quality websites and strive for
-            customer satisfaction. Reliability being our biggest strength, we
-            have the best client reviews from all over the country. We love what
-            we do and that is why we excel in it.
-          </p>
-          <p>
-            Our primary objective is to develop your brand, give your customers
-            a user-friendly experience and market it for you throughout, and not
-            just to earn money. We are excellent learners and observers and we
-            never miss the opportunity to learn from our esteemed clients.
-          </p>
-          <p>
-            Our creativity in tailoring websites for you and developing a
-            framework of unique marketing strategies is what makes us stand out
-            of the crowd.
-          </p>
-        </Right>
+        <StoryInner>
+          <StoryDiv>
+            <Image src={webDeveloper} />
+          </StoryDiv>
+          <StoryDiv>
+            <p>
+              Make My Website is a digital agency with a vision to provide
+              bespoke websites for every business. We are a small team of
+              talented individuals willing to work your way to help you succeed
+              online.
+            </p>
+            <p>
+              Here at Make My Website, we offer quality websites and strive for
+              customer satisfaction. Reliability being our biggest strength, we
+              have the best client reviews from all over the country. We love
+              what we do and that is why we excel in it.
+            </p>
+            <p>
+              Our primary objective is to develop your brand, give your
+              customers a user-friendly experience and market it for you
+              throughout, and not just to earn money. We are excellent learners
+              and observers and we never miss the opportunity to learn from our
+              esteemed clients.
+            </p>
+            <p>
+              Our creativity in tailoring websites for you and developing a
+              framework of unique marketing strategies is what makes us stand
+              out of the crowd.
+            </p>
+          </StoryDiv>
+        </StoryInner>
       </OurStory>
     </Wrap>
   </Layout>
