@@ -14,7 +14,7 @@ import { ThemeProvider } from "emotion-theming"
 import { theme } from "../utils/styles"
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, alternateHeader }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -36,8 +36,7 @@ const Layout = ({ children }) => {
           }
 
           body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
-              sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
           }
 
           h1,
@@ -53,7 +52,10 @@ const Layout = ({ children }) => {
         `}
       />
       <ThemeProvider theme={theme}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          alternate={alternateHeader}
+        />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

@@ -5,13 +5,15 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-react-svg`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Montserrat"],
+          // before launching, make sure to delete most of these weights and only keep the used ones
+          families: ["Montserrat:200,300,400,500,600,700,800"],
         },
       },
     },
