@@ -13,9 +13,10 @@ export const P = styled.p({
 })
 
 export const H1 = styled.h1({
-  fontSize: "50px",
+  fontSize: "48px",
   marginBottom: "20px",
   marginTop: "0px",
+  fontWeight: 800,
 })
 
 export const H3 = styled.h3({
