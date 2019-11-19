@@ -13,6 +13,7 @@ import emotionNormalize from "emotion-normalize"
 import { ThemeProvider } from "emotion-theming"
 import { theme } from "../utils/styles"
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children, alternateHeader }) => {
   const data = useStaticQuery(graphql`
@@ -57,11 +58,8 @@ const Layout = ({ children, alternateHeader }) => {
           alternate={alternateHeader}
         />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
+        
       </ThemeProvider>
     </>
   )

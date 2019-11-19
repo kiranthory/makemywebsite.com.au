@@ -106,7 +106,6 @@ const ItemBtn = styled(Item)({
 const Btn = styled(Button)({
   fontWeight: "inherit",
   backgroundColor: `#ed1c24`,
-  fontWeight: 600,
   cursor: "pointer",
 })
 

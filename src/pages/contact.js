@@ -13,21 +13,22 @@ const Map = styled.div({
   flex: "1 1 50%",
 })
 
+const formStyle = css({
+  width: "100%",
+  padding: "10px",
+  border: "1px solid #ccc",
+  fontSize: "15px",
+  lineHeight: "20px",
+})
+
 const ContactForm = styled.div({
-  textAlign: "left",
+  textAlign: "center",
   width: "100%",
   maxWidth: "70%",
   margin: "auto",
 
-  input: {
-    width: "100%",
-    padding: "10px",
-  },
-
-  textarea: {
-    width: "100%",
-    padding: "10px",
-    height: "120px",
+  label: {
+    display: "flex",
   },
 
   button: {
@@ -86,16 +87,31 @@ const ContactPage = () => (
           <form action="">
             <P>
               <label>Name </label>
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input
+                css={formStyle}
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
             </P>
             <P>
               <label>Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                css={formStyle}
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
             </P>
 
             <P>
               <label>Message </label>
               <textarea
+                css={formStyle}
                 name="message"
                 id="message"
                 rows="5"

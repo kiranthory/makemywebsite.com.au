@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
+import { Link } from "gatsby"
 import headSeperator from "../images/heading-seperator.png"
 import searchEngine from "../images/search-engine.jpg"
 import {
@@ -77,6 +78,11 @@ const searchEngineOptimisation = () => (
           Hence, if you are looking for effective SEO services that have worked
           wonders for our previous clients in Australia, then you are already in
           the right place.
+        </P>
+        <P>
+          <Link to="/free-seo-audit-report">
+            Click Here For Free SEO Audit Report
+          </Link>
         </P>
       </ServiceBottom>
     </Wrap>
