@@ -31,8 +31,12 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
     "react-image-gallery": "^0.9.1",
+    "react-instafeed": "^1.0.0",
+    "react-instagram-embed": "^1.5.0",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^3.0.13",
+    "react-typist": "^2.0.5",
+    "react-typist-loop": "0.0.5",
     "rebass": "^4.0.7",
     "three": "^0.110.0",
     "three.meshline": "^1.2.0"

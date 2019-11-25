@@ -8,7 +8,9 @@ import { IoIosArrowDown } from "react-icons/io"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Row from "../components/Row"
-
+import Typist from "react-typist"
+import TypistLoop from "react-typist-loop"
+import InstagramEmbed from "react-instagram-embed"
 import {
   IoIosBulb,
   IoMdRadioButtonOn,
@@ -36,7 +38,10 @@ import seoIcon from "../images/seo-service-icon.png"
 import contentIcon from "../images/content-writing-icon.png"
 import socialIcon from "../images/social-icon.png"
 import payperIcon from "../images/pay-per-click_icon.png"
-import InstaIcon from "../images/instagram.jpg"
+import HeroMap from "../images/hero-map.png"
+import StarAgency from "../images/5-star-agency-img.png"
+import CustomerSupport from "../images/support.png"
+import ChooseBg from "../images/choose-bg.jpg"
 import { P, H1, Wrap } from "../components/serviceComponents"
 
 const H4 = styled.h4({
@@ -49,10 +54,50 @@ const H5 = styled.h4({
   margin: "10px 0",
 })
 
+const HeroLeft = styled.div({
+  flex: "1 1 60%",
+})
+const HeroRight = styled.div({
+  flex: "1 1 40%",
+})
+
+const HeroTop = styled.div({
+  display: "flex",
+})
+
+const HeroCounter = styled.div({
+  display: "flex",
+  textAlign: "center",
+  alignItems: "baseline",
+  background: "rgba(0, 0, 0, 0.62)",
+  padding: "20px",
+  borderRadius: "20px",
+  margin: "70px 0",
+})
+const HeroItem = styled.div({
+  flex: "1 1 20%",
+  p: {
+    fontSize: "20px",
+    lineHeight: "30px",
+  },
+
+  h3: {
+    fontSize: "40px",
+    fontWeight: 600,
+  },
+})
+
 const MakeRow = styled(Row)({
   textAlign: "center",
-  padding: "70px 0 0",
+  padding: "80px 0 ",
 })
+
+var ChooseStyle = {
+  width: "100%",
+  height: "auto",
+  backgroundImage: `url(${ChooseBg})`,
+  backgroundSize: "cover",
+}
 
 const MakeContainer = styled(Row)({
   textAlign: "left",
@@ -134,6 +179,7 @@ const TestiLogo = styled.img({
 const MakeService = styled(Row)({
   display: "flex",
   textAlign: "center",
+  alignItems: "center",
 })
 
 const LeftService = styled.div({
@@ -146,31 +192,35 @@ const RightService = styled.div({
 
 const ServiceContainer = styled.div({
   display: "flex",
+  flexWrap: "wrap",
+  alignItems: "center",
 })
 
 const ServiceItem = styled.div({
   flex: "1 1 25%",
-  padding: "0px 10px",
+  padding: "0px 5px",
+  display: "flex",
   img: {
     width: "100%",
   },
 })
 
-const InstaContainer = styled.div({
+const ServiceFront = styled.div({
   display: "flex",
+  flexDirection: "column",
+  background: "#eee",
 })
-const InstaImg = styled.div({
-  flex: "1 1 25%",
-  marginTop: "30px",
-  img: {
-    width: "100%",
-  },
+
+const ServiceBack = styled.div({
+  display: "none",
 })
+
+const InstaContainer = styled.div({})
 
 const Hero = styled.div({
   minHeight: `100vh`,
   display: "flex",
-  alignItems: "center",
+  alignItems: "flex-end",
   position: "relative",
   color: "#fff",
 })
@@ -205,9 +255,9 @@ const Content = styled.div({
 
 const Btn = styled(Button)({
   marginRight: 15,
-  borderRadius: `100px`,
+  borderRadius: `0`,
   background: `#ed1c24`,
-  padding: `10px 20px`,
+  padding: `13px 25px`,
   cursor: "pointer",
   fontFamily: `Montserrat, -apple-system, BlinkMacSystemFont, Arial, sans-serif`,
 })
@@ -244,13 +294,56 @@ const IndexPage = () => {
           {isBrowser && <HeroBackground2 />}
         </div>
         <HeroRow>
-          <HeroH1>If it's not done to perfection, don't do it at all.</HeroH1>
-          <HeroP>
-            Highest rated digital agency in Australia. We build successful
-            responsive sites that genuinely connect with your target audience.
-          </HeroP>
-          <Btn>Contact Us</Btn>
-          <Btn>Our Services</Btn>
+          <HeroTop>
+            <HeroLeft>
+              <HeroH1>
+                <TypistLoop interval={2000} count={100}>
+                  {[
+                    "If it's not done to perfection, don't do it at all.",
+                    "Happy Clients in All States & Territories",
+                    "Let's build a future out of the History",
+                    "Your Ambition together with our engagement leads to business growth",
+                    "Speak with Our Specialists to expand your social reach",
+                  ].map(text => (
+                    <Typist key={text} startDelay={20}>
+                      {text}
+                      <Typist.Backspace count={100} delay={20} />
+                    </Typist>
+                  ))}
+                </TypistLoop>
+              </HeroH1>
+              <HeroP>
+                We build successful responsive sites that genuinely connect with
+                your target audience.
+              </HeroP>
+              <Btn>Contact Us</Btn>
+            </HeroLeft>
+            <HeroRight>
+              <img src={HeroMap} alt="Australia Map" />
+            </HeroRight>
+          </HeroTop>
+          <HeroCounter>
+            <HeroItem>
+              <h3>1,000+</h3>
+              <p>Happy Clients</p>
+            </HeroItem>
+            <HeroItem>
+              <h3>10+</h3>
+              <p>Years of Expertise</p>
+            </HeroItem>
+            <HeroItem>
+              <h3>100%</h3>
+              <p>Australian Owned</p>
+            </HeroItem>
+            <HeroItem>
+              <img src={StarAgency} alt="5 Star Rated Web Design Agency" />{" "}
+              <p>5-star rated Web Design Agency</p>
+            </HeroItem>
+            <HeroItem>
+              <img src={CustomerSupport} alt="Exceptional Customer Support" />
+              <p>Exceptional Customer Service</p>
+            </HeroItem>
+          </HeroCounter>
         </HeroRow>
         <AnchorLink href="#content" css={anchorCss}>
           <IoIosArrowDown fill="#fff" size="40" />
@@ -293,7 +386,7 @@ const IndexPage = () => {
             </MakeImg>
           </MakeRow>
 
-          <MakeRow>
+          <MakeRow style={ChooseStyle}>
             <H1>Why Choose Us</H1>
             <img src={headSeperator} alt="head-seperator" />
             <ChooseImg>
@@ -333,71 +426,114 @@ const IndexPage = () => {
               <RightService>
                 <ServiceContainer>
                   <ServiceItem>
-                    <img src={designIcon} alt="Web Designing" />
-                    <H5>Web Design</H5>
-                    <P>
-                      The world is getting advanced and for matching the
-                      standards of present era, online existence is must.
-                    </P>
+                    <ServiceFront>
+                      {" "}
+                      <img src={designIcon} alt="Web Designing" />
+                      <H5>Web Design</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Web Design</H5>
+                      <P>
+                        The world is getting advanced and for matching the
+                        standards of present era, online existence is must.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={marketingIcon} alt="Online Marketing" />
-                    <H5>Online Marketing</H5>
-                    <P>
-                      Marketing is essential today and no business can shrug off
-                      the value of this powerful factor.
-                    </P>
+                    <ServiceFront>
+                      {" "}
+                      <img src={marketingIcon} alt="Online Marketing" />
+                      <H5>Online Marketing</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Online Marketing</H5>
+                      <P>
+                        Marketing is essential today and no business can shrug
+                        off the value of this powerful factor.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={hostingIcon} alt="Web And Email Hosting" />
-                    <H5>Web And Email Hosting</H5>
-                    <P>
-                      Web hosting is actually the space which you purchase on a
-                      web server so as to store your site files.
-                    </P>
+                    <ServiceFront>
+                      <img src={hostingIcon} alt="Web And Email Hosting" />
+                      <H5>Web And Email Hosting</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Web And Email Hosting</H5>
+                      <P>
+                        Web hosting is actually the space which you purchase on
+                        a web server so as to store your site files.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={ecommerceIcon} alt="Ecommerce" />
-                    <H5>Ecommerce</H5>
-                    <P>
-                      Over the previous decade the usefulness of internet has
-                      augmented manifold.
-                    </P>
+                    <ServiceFront>
+                      <img src={ecommerceIcon} alt="Ecommerce" />
+                      <H5>Ecommerce</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Ecommerce</H5>
+                      <P>
+                        Over the previous decade the usefulness of internet has
+                        augmented manifold.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                 </ServiceContainer>
                 <ServiceContainer>
                   <ServiceItem>
-                    <img src={seoIcon} alt="SEO" />
-                    <H5>SEO</H5>
-                    <P>
-                      SEO is one of the main marketing channels to endorse
-                      website exposure via higher visibility in search engines.
-                    </P>
+                    <ServiceFront>
+                      <img src={seoIcon} alt="SEO" />
+                      <H5>SEO</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>SEO</H5>
+                      <P>
+                        SEO is one of the main marketing channels to endorse
+                        website exposure via higher visibility in search
+                        engines.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={contentIcon} alt="Content Writing" />
-                    <H5>Content Writing</H5>
-                    <P>
-                      At Make My Website, our experts are well acquainting with
-                      all the tactics of content writing.
-                    </P>
+                    <ServiceFront>
+                      <img src={contentIcon} alt="Content Writing" />
+                      <H5>Content Writing</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Content Writing</H5>
+                      <P>
+                        At Make My Website, our experts are well acquainting
+                        with all the tactics of content writing.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={socialIcon} alt="Social Media Marketing" />
-                    <H5>Social Media Marketing</H5>
-                    <P>
-                      No matter what you sell and who is your buyer, making use
-                      of social media as a marketing device can prove very
-                      helpful for growing your brand.
-                    </P>
+                    <ServiceFront>
+                      <img src={socialIcon} alt="Social Media Marketing" />
+                      <H5>Social Media Marketing</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Social Media Marketing</H5>
+                      <P>
+                        No matter what you sell and who is your buyer, making
+                        use of social media as a marketing device can prove very
+                        helpful for growing your brand.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                   <ServiceItem>
-                    <img src={payperIcon} alt="Pay Per Click" />
-                    <H5>Pay Per Click</H5>
-                    <P>
-                      Even the marketing experts can make errors when they begin
-                      to sell a new product with the help of PPC.
-                    </P>
+                    <ServiceFront>
+                      <img src={payperIcon} alt="Pay Per Click" />
+                      <H5>Pay Per Click</H5>
+                    </ServiceFront>
+                    <ServiceBack>
+                      <H5>Pay Per Click</H5>
+                      <P>
+                        Even the marketing experts can make errors when they
+                        begin to sell a new product with the help of PPC.
+                      </P>
+                    </ServiceBack>
                   </ServiceItem>
                 </ServiceContainer>
               </RightService>
@@ -487,18 +623,18 @@ const IndexPage = () => {
             <H1>Follow Us On Instagram</H1>
             <img src={headSeperator} alt="head-seperator" />
             <InstaContainer>
-              <InstaImg>
-                <img src={InstaIcon} alt="Make My Website" />
-              </InstaImg>
-              <InstaImg>
-                <img src={InstaIcon} alt="Make My Website" />
-              </InstaImg>
-              <InstaImg>
-                <img src={InstaIcon} alt="Make My Website" />
-              </InstaImg>
-              <InstaImg>
-                <img src={InstaIcon} alt="Make My Website" />
-              </InstaImg>
+              <InstagramEmbed
+                url="https://instagr.am/p/Zw9o4/"
+                maxWidth={320}
+                hideCaption={false}
+                containerTagName="div"
+                protocol=""
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {}}
+                onAfterRender={() => {}}
+                onFailure={() => {}}
+              />
             </InstaContainer>
           </MakeRow>
         </Wrap>
