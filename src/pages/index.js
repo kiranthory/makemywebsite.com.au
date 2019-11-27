@@ -193,16 +193,17 @@ const RightService = styled.div({
 const ServiceContainer = styled.div({
   display: "flex",
   flexWrap: "wrap",
-  alignItems: "center",
 })
 
 const ServiceItem = styled.div({
   flex: "1 1 25%",
-  padding: "0px 5px",
+  padding: "5px",
   display: "flex",
   img: {
     width: "100%",
   },
+
+
 })
 
 const ServiceFront = styled.div({
