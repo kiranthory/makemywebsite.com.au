@@ -10,7 +10,11 @@ import {
   IoIosArrowForward,
 } from "react-icons/io"
 
-const FooterRow = styled(Row)({})
+const FooterRow = styled(Row)({
+  width: '100%',
+  maxWidth: '1200px',
+  background:'#fff',
+})
 
 const FooterTop = styled(Row)({
   display: "flex",

@@ -11,6 +11,7 @@ import Row from "../components/Row"
 import Typist from "react-typist"
 import TypistLoop from "react-typist-loop"
 import InstagramEmbed from "react-instagram-embed"
+import Flippy, { FrontSide, BackSide } from "react-flippy"
 import {
   IoIosBulb,
   IoMdRadioButtonOn,
@@ -195,26 +196,7 @@ const ServiceContainer = styled.div({
   flexWrap: "wrap",
 })
 
-const ServiceItem = styled.div({
-  flex: "1 1 25%",
-  padding: "5px",
-  display: "flex",
-  img: {
-    width: "100%",
-  },
 
-
-})
-
-const ServiceFront = styled.div({
-  display: "flex",
-  flexDirection: "column",
-  background: "#eee",
-})
-
-const ServiceBack = styled.div({
-  display: "none",
-})
 
 const InstaContainer = styled.div({})
 
@@ -413,6 +395,7 @@ const IndexPage = () => {
               </Item>
             </ChooseImg>
           </MakeRow>
+
           <MakeRow>
             <MakeService>
               <LeftService>
@@ -426,116 +409,204 @@ const IndexPage = () => {
               </LeftService>
               <RightService>
                 <ServiceContainer>
-                  <ServiceItem>
-                    <ServiceFront>
-                      {" "}
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={designIcon} alt="Web Designing" />
                       <H5>Web Design</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Web Design</H5>
                       <P>
                         The world is getting advanced and for matching the
                         standards of present era, online existence is must.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
-                      {" "}
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={marketingIcon} alt="Online Marketing" />
                       <H5>Online Marketing</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Online Marketing</H5>
                       <P>
                         Marketing is essential today and no business can shrug
                         off the value of this powerful factor.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={hostingIcon} alt="Web And Email Hosting" />
                       <H5>Web And Email Hosting</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Web And Email Hosting</H5>
                       <P>
                         Web hosting is actually the space which you purchase on
                         a web server so as to store your site files.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={ecommerceIcon} alt="Ecommerce" />
                       <H5>Ecommerce</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Ecommerce</H5>
                       <P>
                         Over the previous decade the usefulness of internet has
                         augmented manifold.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
+                    </BackSide>
+                  </Flippy>
+                  
                 </ServiceContainer>
                 <ServiceContainer>
-                  <ServiceItem>
-                    <ServiceFront>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={seoIcon} alt="SEO" />
                       <H5>SEO</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>SEO</H5>
                       <P>
                         SEO is one of the main marketing channels to endorse
                         website exposure via higher visibility in search
                         engines.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={contentIcon} alt="Content Writing" />
                       <H5>Content Writing</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Content Writing</H5>
                       <P>
                         At Make My Website, our experts are well acquainting
                         with all the tactics of content writing.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={socialIcon} alt="Social Media Marketing" />
-                      <H5>Social Media Marketing</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                      <H5>Social Medila Marketing</H5>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Social Media Marketing</H5>
                       <P>
                         No matter what you sell and who is your buyer, making
                         use of social media as a marketing device can prove very
                         helpful for growing your brand.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
-                  <ServiceItem>
-                    <ServiceFront>
+                    </BackSide>
+                  </Flippy>
+                  <Flippy
+                    flipOnHover={true} // default false
+                    flipOnClick={false} // default false
+                    flipDirection="horizontal" // horizontal or vertical
+                    // if you pass isFlipped prop component will be controlled component.
+                    // and other props, which will go to div
+                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                  >
+                    <FrontSide
+                      style={{
+                        backgroundColor: "#EEEEEE",
+                      }}
+                    >
                       <img src={payperIcon} alt="Pay Per Click" />
                       <H5>Pay Per Click</H5>
-                    </ServiceFront>
-                    <ServiceBack>
+                    </FrontSide>
+                    <BackSide style={{ backgroundColor: "#EEEEEE" }}>
                       <H5>Pay Per Click</H5>
                       <P>
                         Even the marketing experts can make errors when they
                         begin to sell a new product with the help of PPC.
                       </P>
-                    </ServiceBack>
-                  </ServiceItem>
+                    </BackSide>
+                  </Flippy>
+                 
                 </ServiceContainer>
               </RightService>
             </MakeService>
