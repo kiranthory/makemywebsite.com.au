@@ -10,8 +10,8 @@ import Seo from "../components/Seo"
 import Row from "../components/Row"
 import Typist from "react-typist"
 import TypistLoop from "react-typist-loop"
-import InstagramEmbed from "react-instagram-embed"
 import Flippy, { FrontSide, BackSide } from "react-flippy"
+import Testimonials from "../components/testimonials"
 import {
   IoIosBulb,
   IoMdRadioButtonOn,
@@ -21,16 +21,10 @@ import {
 } from "react-icons/io"
 import HeroBackground2 from "../components/HeroBackground2"
 import headSeperator from "../images/heading-seperator.png"
+import WhiteHeadSeparator from "../images/heading-seperator-white.png"
 import codingImg from "../images/Programming-And-Coding-mmw.jpg"
 import onlineMarketing from "../images/Online-Marketing-mmw.jpg"
 import emailHosting from "../images/email-hosting-mmw.jpg"
-import fiveStar from "../images/5-star.png"
-import cyanergyLogo from "../images/cyanergy-logo.jpg"
-import webCyanergy from "../images/cyanergy-desktop.png"
-import IndianLogo from "../images/Indian-Bazaar.png"
-import IndianBazaar from "../images/indian-bazaar-img.png"
-import LuxLogo from "../images/lux-icon.jpg"
-import LuxProperty from "../images/lux-property-group.png"
 import designIcon from "../images/web-design_icon.png"
 import marketingIcon from "../images/online-marketing-icon.png"
 import hostingIcon from "../images/web-email-hosting_icon.png"
@@ -44,11 +38,6 @@ import StarAgency from "../images/5-star-agency-img.png"
 import CustomerSupport from "../images/support.png"
 import ChooseBg from "../images/choose-bg.jpg"
 import { P, H1, Wrap } from "../components/serviceComponents"
-
-const H4 = styled.h4({
-  fontSize: "22px",
-  margin: "15px 0",
-})
 
 const H5 = styled.h4({
   fontSize: "18px",
@@ -88,17 +77,26 @@ const HeroItem = styled.div({
   },
 })
 
+const FullRow = styled(Row)({
+  width: "100%",
+  maxWidth: "100%",
+  padding: "0px",
+
+  H1: {
+    color: "#fff",
+    position: "relative",
+    zIndex: 9999,
+  },
+  img: {
+    position: "relative",
+    marginBottom: "20px",
+  },
+})
+
 const MakeRow = styled(Row)({
   textAlign: "center",
   padding: "80px 0 ",
 })
-
-var ChooseStyle = {
-  width: "100%",
-  height: "auto",
-  backgroundImage: `url(${ChooseBg})`,
-  backgroundSize: "cover",
-}
 
 const MakeContainer = styled(Row)({
   textAlign: "left",
@@ -121,15 +119,42 @@ const AboutImg = styled.div({
 const ChooseImg = styled.div({
   display: "flex",
   paddingTop: "35px",
+  color: "#fff",
 })
 const Item = styled.div({
   flex: "1 1 20%",
+  zIndex: 9999,
 })
+
+const ServiceFlip = {
+  width: "25%",
+  height: "auto",
+  border: "2px solid #fff",
+}
+
+const ChooseStyle = {
+  backgroundImage: `url(${ChooseBg})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  position: "relative",
+  backgroundAttachment: "fixed",
+}
+
+const Overlay = {
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  background: "rgba(0, 0, 0, 0.7)",
+  left: "0px",
+  top: "0px",
+}
+const View = styled.div({})
 
 const iconStyle = css({
   width: "100px",
   height: "100px",
-  border: "2px dashed #000",
+  border: "2px dashed #fff",
   padding: "15px",
   marginBottom: "15px",
   borderRadius: "100%",
@@ -147,56 +172,30 @@ const Right = styled.div({
   padding: "0px 10px",
 })
 
-const TestiSlide = styled.div({
-  display: "flex",
-  textAlign: "Center",
-})
-
-const LeftContent = styled.div({
-  flex: "1 1 50%",
-  padding: "20px ",
-  a: {
-    color: "#ED1C24",
-    textDecoration: "none",
-  },
-})
-
-const RightImg = styled.div({
-  flex: "1 1 50%",
-  img: {
-    width: "100%",
-  },
-})
-
-const TestiLogo = styled.img({
-  borderRadius: "100%",
-  width: "80px",
-  boxShadow: "0px 0px 8px #ccc",
-  padding: "10px",
-  display: "block",
-  margin: "0 auto 15px",
-})
-
 const MakeService = styled(Row)({
+  width: "100%",
+  maxWidth: "100%",
   display: "flex",
   textAlign: "center",
   alignItems: "center",
+  padding: "0px",
+  H1: {
+    color: "#000",
+  },
 })
 
 const LeftService = styled.div({
-  flex: "1 1 20%",
+  flex: "1 1 25%",
 })
 
 const RightService = styled.div({
-  flex: "1 1 80%",
+  flex: "1 1 75%",
 })
 
 const ServiceContainer = styled.div({
   display: "flex",
   flexWrap: "wrap",
 })
-
-
 
 const InstaContainer = styled.div({})
 
@@ -369,34 +368,37 @@ const IndexPage = () => {
             </MakeImg>
           </MakeRow>
 
-          <MakeRow style={ChooseStyle}>
-            <H1>Why Choose Us</H1>
-            <img src={headSeperator} alt="head-seperator" />
-            <ChooseImg>
-              <Item>
-                <IoIosBulb css={iconStyle} />
-                <P>We have Futuristic Approach</P>
-              </Item>
-              <Item>
-                <IoMdRadioButtonOn css={iconStyle} />
-                <P>We Aim to Excel</P>
-              </Item>
-              <Item>
-                <IoIosCard css={iconStyle} />
-                <P>We Understand Your Identity</P>
-              </Item>
-              <Item>
-                <IoIosPeople css={iconStyle} />
-                <P>We Make It Personal</P>
-              </Item>
-              <Item>
-                <IoMdTrendingUp css={iconStyle} />
-                <P>We are Result Driven</P>
-              </Item>
-            </ChooseImg>
-          </MakeRow>
+          <FullRow style={ChooseStyle}>
+            <View style={Overlay} />
+            <MakeRow>
+              <H1>Why Choose Us</H1>
+              <img src={WhiteHeadSeparator} alt="head-seperator" />
+              <ChooseImg>
+                <Item>
+                  <IoIosBulb css={iconStyle} />
+                  <P>We have Futuristic Approach</P>
+                </Item>
+                <Item>
+                  <IoMdRadioButtonOn css={iconStyle} />
+                  <P>We Aim to Excel</P>
+                </Item>
+                <Item>
+                  <IoIosCard css={iconStyle} />
+                  <P>We Understand Your Identity</P>
+                </Item>
+                <Item>
+                  <IoIosPeople css={iconStyle} />
+                  <P>We Make It Personal</P>
+                </Item>
+                <Item>
+                  <IoMdTrendingUp css={iconStyle} />
+                  <P>We are Result Driven</P>
+                </Item>
+              </ChooseImg>
+            </MakeRow>
+          </FullRow>
 
-          <MakeRow>
+          <FullRow>
             <MakeService>
               <LeftService>
                 <H1>Services</H1>
@@ -415,7 +417,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -439,7 +441,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -463,7 +465,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -487,7 +489,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -505,7 +507,6 @@ const IndexPage = () => {
                       </P>
                     </BackSide>
                   </Flippy>
-                  
                 </ServiceContainer>
                 <ServiceContainer>
                   <Flippy
@@ -514,7 +515,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -539,7 +540,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -563,7 +564,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -588,7 +589,7 @@ const IndexPage = () => {
                     flipDirection="horizontal" // horizontal or vertical
                     // if you pass isFlipped prop component will be controlled component.
                     // and other props, which will go to div
-                    style={{ width: "200px", height: "auto" }} /// these are optional style, it is not necessary
+                    style={ServiceFlip} /// these are optional style, it is not necessary
                   >
                     <FrontSide
                       style={{
@@ -606,108 +607,20 @@ const IndexPage = () => {
                       </P>
                     </BackSide>
                   </Flippy>
-                 
                 </ServiceContainer>
               </RightService>
             </MakeService>
-          </MakeRow>
-          <MakeRow>
-            <TestiSlide>
-              <LeftContent>
-                <TestiLogo src={cyanergyLogo} alt="5 Star" />
-                <img src={fiveStar} alt="5 Star" />
-                <H4>Cyanergy Pty Ltd</H4>
-                <P>
-                  “Amazing service and most of all the most amazing people and
-                  talents on the digital space, as far as we’re concerned. Thank
-                  you so much!”
-                </P>
-                <a
-                  href="https://www.cyanergy.com.au/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://www.cyanergy.com.au
-                </a>
-              </LeftContent>
-              <RightImg>
-                <img src={webCyanergy} alt="5 Star" />
-              </RightImg>
-            </TestiSlide>
-
-            <TestiSlide>
-              <LeftContent>
-                <TestiLogo src={LuxLogo} alt="5 Star" />
-                <img src={fiveStar} alt="5 Star" />
-                <H4>Jesse Cai</H4>
-                <P>
-                  “Brilliant customer service as pick up calls even late at
-                  night and also with the website professional work on it, easy
-                  to use prestige looks. Thank you for the hard work you guys
-                  has put into it. Also pricing is great, worth what its
-                  delivers.”
-                </P>
-                <a
-                  href="https://www.homehotel.com.au/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://www.homehotel.com.au
-                </a>{" "}
-                or{" "}
-                <a
-                  href="https://www.luxpropertygroup.com.au/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://www.luxpropertygroup.com.au
-                </a>
-              </LeftContent>
-              <RightImg>
-                <img src={LuxProperty} alt="5 Star" />
-              </RightImg>
-            </TestiSlide>
-
-            <TestiSlide>
-              <LeftContent>
-                <TestiLogo src={IndianLogo} alt="5 Star" />
-                <img src={fiveStar} alt="5 Star" />
-                <H4>Shwetali Sawant</H4>
-                <P>
-                  “Extremely happy with the work and support of Make My Website
-                  team. The end result speaks for itself. I’ll highly recommend
-                  them for a professional and top notch website.”
-                </P>
-                <a
-                  href="https://www.shwetaoz.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://www.shwetaoz.com
-                </a>
-              </LeftContent>
-              <RightImg>
-                <img src={IndianBazaar} alt="5 Star" />
-              </RightImg>
-            </TestiSlide>
-          </MakeRow>
+          </FullRow>
+          <FullRow style={ChooseStyle}>
+            <View style={Overlay} />
+            <MakeRow>
+              <Testimonials />
+            </MakeRow>
+          </FullRow>
           <MakeRow>
             <H1>Follow Us On Instagram</H1>
             <img src={headSeperator} alt="head-seperator" />
-            <InstaContainer>
-              <InstagramEmbed
-                url="https://instagr.am/p/Zw9o4/"
-                maxWidth={320}
-                hideCaption={false}
-                containerTagName="div"
-                protocol=""
-                injectScript
-                onLoading={() => {}}
-                onSuccess={() => {}}
-                onAfterRender={() => {}}
-                onFailure={() => {}}
-              />
-            </InstaContainer>
+            <InstaContainer></InstaContainer>
           </MakeRow>
         </Wrap>
       </Content>
