@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Children } from "react"
 import styled from "@emotion/styled"
 import Row from "./Row"
 import { css } from "@emotion/core"
@@ -11,9 +11,10 @@ import {
 } from "react-icons/io"
 
 const FooterRow = styled(Row)({
-  width: '100%',
-  maxWidth: '1200px',
-  background:'#fff',
+  width: "100%",
+  maxWidth: "100%",
+  background: "#eee",
+  padding: "50px 0 20px",
 })
 
 const FooterTop = styled(Row)({
@@ -22,6 +23,7 @@ const FooterTop = styled(Row)({
 
 const FooterCol = styled.div({
   flex: "1 1 25%",
+  paddingRight: "20px",
 })
 const iconStyle = css({
   color: "#ED1C24",
@@ -38,7 +40,7 @@ const FooterItem = styled.li({
   position: "relative",
   paddingLeft: "30px",
   paddingBottom: "10px",
-
+  fontSize: "14px",
   a: {
     color: "#000",
     textDecoration: "none",

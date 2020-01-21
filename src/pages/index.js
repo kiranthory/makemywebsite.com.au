@@ -58,7 +58,7 @@ const HeroTop = styled.div({
 const HeroCounter = styled.div({
   display: "flex",
   textAlign: "center",
-  alignItems: "baseline",
+  alignItems: "unset",
   background: "rgba(0, 0, 0, 0.62)",
   padding: "20px",
   borderRadius: "20px",
@@ -186,6 +186,7 @@ const MakeService = styled(Row)({
 
 const LeftService = styled.div({
   flex: "1 1 25%",
+  padding: "0px 30px",
 })
 
 const RightService = styled.div({
@@ -215,12 +216,13 @@ const HeroRow = styled(Row)({
 })
 
 const HeroH1 = styled.h1({
-  fontSize: 40,
+  fontSize: 35,
   fontWeight: 700,
   maxWidth: 680,
   lineHeight: 1.4,
   marginTop: 0,
   marginBottom: 20,
+  height: "98px",
 })
 
 const HeroP = styled.p({
