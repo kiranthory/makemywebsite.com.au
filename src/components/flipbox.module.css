@@ -1,0 +1,41 @@
+.flipbox h5 {
+  color: #000;
+  font-size: 18px;
+}
+
+.flipbox p {
+  font-size: 16px;
+  color: #000;
+  line-height: 28px;
+  padding: 0px 20px;
+}
+
+.flipback h5 {
+  margin-bottom: 0px;
+}
+
+.flipfront h5 {
+  margin-top: 0px;
+}
+
+.flipbox:hover .flipinner {
+  transform: rotateY(180deg);
+}
+
+.servicecontainer,
+.mmwservice,
+.makeservice,
+.rightservice,
+.fullrow {
+  padding: 0px !important;
+  max-width: 100% !important;
+}
+
+.mmwbtn {
+  background: #ed1c24;
+  padding: 13px 25px;
+  cursor: pointer;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
