@@ -41,7 +41,7 @@
     "react-typist-loop": "0.0.5",
     "rebass": "^4.0.7",
     "rollback": "^0.2.9",
-    "three": "^0.110.0",
+    "three": "^0.137.0",
     "three.meshline": "^1.2.0"
   },
   "devDependencies": {
